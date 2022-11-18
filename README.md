@@ -18,6 +18,10 @@ If we want to declare variable to hold **m** digits to the left of the decimal p
 
     var4 NUMBER(m+n,n);
 
+Declaring constant variables:
+
+    var5 CONSTANT NUMBER := 100;
+
 ## Assigning values to variables
 -Normal assignment
 
@@ -31,6 +35,10 @@ If we want to declare variable to hold **m** digits to the left of the decimal p
     Select sal*10 INTO bonus FROM emp WHERE empno=1;
     
 Here, we inserted salary with a hike of 10% into variable **bonus**.
+
+## Printing to the console
+
+    dbms_output.put_line('string' | <variable>);
 
 ## Inserting values into the database
     insert into summary(total,tot_loads,start_time) values(tot_records,records_loaded,process_start_time);
